@@ -21,7 +21,7 @@
 
 
     <!-- =====================================================
-         HEADER
+         HEADER V42
     ====================================================== -->
 
     <header class="page-header">
@@ -36,18 +36,39 @@
           Saisie et transmission de votre semaine de travail
         </p>
 
-        <div class="env-selector">
-          <label for="environment">Environnement :</label>
-          <select id="environment" name="environment">
-            <option value="TEST">TEST</option>
-            <option value="PROD" selected>PROD</option>
-          </select>
-        </div>
+        <!-- Bouton de configuration discret -->
+        <details style="position:absolute;top:8px;right:8px;">
+          <summary style="
+                list-style:none;
+                cursor:pointer;
+                color:#000;
+                opacity:.25;
+                font-size:10px;
+                user-select:none;
+                outline:none;
+            ">⚙</summary>
 
+          <div style="
+                margin-top:5px;
+                padding:6px;
+                background:#fff;
+                border:1px solid #ddd;
+                border-radius:4px;
+                box-shadow:0 2px 6px rgba(0,0,0,.1);
+                white-space:nowrap;
+            ">
+            <label for="environment">Env :</label>
+            <select id="environment" name="environment">
+              <option value="TEST">TEST</option>
+              <option value="PROD" selected>PROD</option>
+            </select>
+          </div>
+        </details>
 
       </div>
 
     </header>
+
 
 
     <div id="messageDemarrage" class="alert alert-info">
