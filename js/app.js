@@ -1658,18 +1658,12 @@ async function envoyerVersPowerAutomate(data) {
 
     const environnement = document.getElementById("environment").value;
 
-    fetch("https://one4u.sharepoint.com/sites/SAONEBRESSECHAROLAIS/_layouts/15/download.aspx?UniqueId=64474af187454b4384336269f458da3d&e=upAwWt")
-        .then(r => r.blob())
-        .then(file => {
-            console.log(file);
-        });
-
 
     let url;
 
     if (environnement === "TEST") {
         url = "https://defaultf4a12867922d4b9dbb859ee7898512.a0.environment.api.powerplatform.com:443/powerautomate/automations/direct/cu/06/workflows/db4272c898ac4da78e5b58415adf4f02/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=TPUWRC8qIDl9T78yk8Mp1y9gBwIlO5psVO09wvXRrqw"
-        url = "pour"
+
     } else if (environnement === "PROD") {
         url = "https://defaultf4a12867922d4b9dbb859ee7898512.a0.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/e223bacb04b244d7849c8530a8fa85a5/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=UVNvMdv8A-wjtOX2JN4ZV2fFLAoeIqILvhUYNBReN9o";
     }
