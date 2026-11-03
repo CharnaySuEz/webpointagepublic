@@ -5,14 +5,14 @@ const collaborateursParSite = {
             prenom: "Ju",
             matricule: 12345,
             mail: "julien.lardant@suez.com",
-            typeHoraire: "standard"
+            typehoraire: "pause45"
         },
         "Alexia": {
             nom: "Gayot",
             prenom: "Alexia",
             matricule: 34649,
             mail: "alexia.gayot@suez.com",
-            typeHoraire: "quatreJours"
+            typehoraire: "quatreJours"
         },
         "David": {
             nom: "Desmolles",

@@ -141,10 +141,9 @@ function createDayTable(jour, site, collaborateur) {
 
     const typeHoraire =
         modelesHoraires[
-        collaborateursParSite[site][collaborateur]['typeHoraire']
+        collaborateursParSite[site][collaborateur]['typehoraire']
         ];
 
-    console.log(typeHoraire)
 
     const isWeekend =
         jour === "Samedi" ||
