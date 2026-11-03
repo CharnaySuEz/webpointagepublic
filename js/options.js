@@ -10,6 +10,7 @@ function motifOptions(selected = "") {
         "RTTA",
         "RTTJ",
         "AMAL",
+        "PFOR",
         "AUTRE..."
     ];
 
@@ -25,24 +26,24 @@ function motifOptions(selected = "") {
         .join("");
 }
 
-    function toggleMotifLibre(select) {
+function toggleMotifLibre(select) {
 
-      const inputLibre =
+    const inputLibre =
         select.parentElement.querySelector(".motif-libre");
 
-      if (select.value === "AUTRE...") {
+    if (select.value === "AUTRE...") {
 
         inputLibre.style.display = "block";
         inputLibre.focus();
 
-      } else {
+    } else {
 
         inputLibre.style.display = "none";
         inputLibre.value = "";
 
-      }
-
     }
+
+}
 
 
 function typeOptions(selected = "") {
