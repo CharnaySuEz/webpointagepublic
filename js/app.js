@@ -37,6 +37,13 @@ function verifierInformationsGenerales() {
 
     if (complet) {
 
+        //generation des jours de la semaine en fcontion de al typologie du salarié ( horairedefaut/ 4jours/pause 45mn)
+        generateDays(site, collaborateur);
+
+        initializeWeekHoursCalculation();
+
+        calculateWeekHours();
+
         formulaire.style.display = "block";
         message.style.display = "none";
 
@@ -129,28 +136,33 @@ function createDayRow(
 }
 
 
-function createDayTable(jour) {
+function createDayTable(jour, site, collaborateur) {
+
+
+    const typeHoraire =
+        modelesHoraires[
+        collaborateursParSite[site][collaborateur]['typeHoraire']
+        ];
+
+    console.log(typeHoraire)
 
     const isWeekend =
         jour === "Samedi" ||
         jour === "Dimanche";
 
+    let rows = createDayRow("", "", "", "");
 
-    const rows = isWeekend
+    if (!isWeekend) {
 
-        ? createDayRow("", "", "", "")
+        const h = typeHoraire[jour];
 
-        : jour === "Vendredi"
-
-            ? `
-    ${createDayRow("08:00", "12:00")}
-    ${createDayRow("13:30", "16:30")}
-    `
-
-            : `
-    ${createDayRow("08:00", "12:00")}
-    ${createDayRow("13:30", "17:00")}
-    `;
+        rows = createDayRow(
+            h.matinDebut,
+            h.matinFin,
+            h.apremDebut,
+            h.apremFin
+        );
+    }
 
 
     return `
@@ -294,14 +306,14 @@ function createDayTable(jour) {
 }
 
 
-function generateDays() {
+function generateDays(site, collaborateur) {
 
     const container =
         document.getElementById("daysContainer");
 
     container.innerHTML =
         jours
-            .map(jour => createDayTable(jour))
+            .map(jour => createDayTable(jour, site, collaborateur))
             .join("");
 
 }
@@ -1746,13 +1758,7 @@ document.addEventListener(
     "DOMContentLoaded",
     function () {
 
-        generateDays();
-
         updateNomPrenom();
-
-        initializeWeekHoursCalculation();
-
-        calculateWeekHours();
 
         verifierInformationsGenerales();
 
