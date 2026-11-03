@@ -156,12 +156,15 @@ function createDayTable(jour, site, collaborateur) {
 
         const h = typeHoraire[jour];
 
-        rows = createDayRow(
-            h.matinDebut,
-            h.matinFin,
-            h.apremDebut,
-            h.apremFin
-        );
+        rows =
+            createDayRow(
+                h.matinDebut,
+                h.matinFin
+            ) +
+            createDayRow(
+                h.apremDebut,
+                h.apremFin
+            );
     }
 
 
