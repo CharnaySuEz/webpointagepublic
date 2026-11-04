@@ -1,4 +1,6 @@
 
+const VERSION = "5.0"
+
 const jours = [
     "Lundi",
     "Mardi",

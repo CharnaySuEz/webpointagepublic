@@ -1764,5 +1764,8 @@ document.addEventListener(
 
         verifierInformationsGenerales();
 
+        //mise à jour nom de la page
+        document.getElementById("pageTitleWithVersion").textContent =
+            `Feuille de Pointage V${VERSION} - BRANCHE DEV`;
     }
 );
