@@ -248,7 +248,7 @@ dans un navigateur moderne.
 Version actuelle :
 
 ```text
-V5.0
+V5.2
 ```
 
 Définie dans constants.js. 
