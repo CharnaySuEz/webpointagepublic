@@ -11,7 +11,6 @@ const jours = [
     "Dimanche"
 ];
 
-
 const motifsDepassementJour = [
     "",
     "Intervention urgente",
@@ -22,8 +21,6 @@ const motifsDepassementJour = [
     "Formation",
     "Autre"
 ];
-
-
 
 const horairesParDefaut = {
     Lundi: { matinDebut: "08:00", matinFin: "12:00", apremDebut: "13:30", apremFin: "17:00" },
