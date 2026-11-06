@@ -1,5 +1,5 @@
 
-const VERSION = "5.0"
+const VERSION = "5.2"
 
 const jours = [
     "Lundi",

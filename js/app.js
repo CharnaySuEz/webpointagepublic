@@ -1203,6 +1203,6 @@ document.addEventListener(
 
         //mise à jour nom de la page
         document.getElementById("pageTitleWithVersion").textContent =
-            `Feuille de Pointage V${VERSION} - BRANCHE DEV`;
+            `Feuille de Pointage V${VERSION}`;
     }
 );
