@@ -39,10 +39,10 @@ const horairesPause45mn = {
 };
 
 const horaires4Jours = {
-    Lundi: { matinDebut: "07:30", matinFin: "12:00", apremDebut: "13:15", apremFin: "18:00" },
-    Mardi: { matinDebut: "07:30", matinFin: "12:00", apremDebut: "13:15", apremFin: "18:00" },
-    Mercredi: { matinDebut: "07:30", matinFin: "12:00", apremDebut: "13:15", apremFin: "18:00" },
-    Jeudi: { matinDebut: "07:30", matinFin: "12:00", apremDebut: "13:15", apremFin: "18:00" },
+    Lundi: { matinDebut: "07:15", matinFin: "12:15", apremDebut: "13:00", apremFin: "17:15" },
+    Mardi: { matinDebut: "07:15", matinFin: "12:15", apremDebut: "13:00", apremFin: "17:15" },
+    Mercredi: { matinDebut: "07:15", matinFin: "12:15", apremDebut: "13:00", apremFin: "17:15" },
+    Jeudi: { matinDebut: "07:15", matinFin: "12:15", apremDebut: "13:00", apremFin: "17:15" },
     Vendredi: { matinDebut: "", matinFin: "", apremDebut: "", apremFin: "" }
 };
 
