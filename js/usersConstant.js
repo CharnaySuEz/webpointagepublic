@@ -2,7 +2,7 @@ const collaborateursParSite = {
     CHARNAY: {
         "Ju Test": {
             nom: "Test",
-            prenom: "Ju",
+            prenom: "Julien",
             matricule: 12345,
             mail: "julien.lardant@suez.com",
             typehoraire: "pause45"
@@ -147,7 +147,7 @@ const collaborateursParSite = {
             prenom: "Maxime",
             matricule: "PT4064",
             mail: "maxime.pacot@suez.com",
-            typehoraire: "standard"
+            typehoraire: "pause45"
         },
         "Nicolas C": {
             nom: "Contrôle",
