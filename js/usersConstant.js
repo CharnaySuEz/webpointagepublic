@@ -218,6 +218,13 @@ const collaborateursParSite = {
             matricule: 68769,
             mail: "xavier.lumpp@suez.com",
             typehoraire: "standard"
+        },
+        "Ismeal": {
+            nom: "Zougrar",
+            prenom: "Ismeal",
+            matricule: XXXXXX,
+            mail: "ismael.zougrar@suez.com",
+            typehoraire: "standard"
         }
     },
 
