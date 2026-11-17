@@ -476,7 +476,7 @@ function generateAndSendJSON(button) {
     setTimeout(() => {
         button.disabled = false;
         button.textContent = "Générer la feuille de temps";
-    }, 15000);
+    }, 45000);
 
 }
 
